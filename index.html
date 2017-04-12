@@ -1,0 +1,212 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScriptライブラリを配布する際に気をつけていること</title>
+	<link rel="stylesheet" href="https://unpkg.com/talkiejs@0.11.2/dist/talkie.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/talkiejs@0.11.2/dist/talkie-default.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/monokai_sublime.min.css">
+</head>
+<body>
+<style>
+html{
+		font-size:90%;
+}
+[layout=cover] h1{
+		text-transform: none;
+}
+[layout=code] .hljs {
+	font-size: 20px;
+}
+</style>
+
+<!-- put your slides -->
+
+<template layout="cover" type="text/x-markdown">
+## JavaScriptライブラリを<br>配布する際に気をつけていること
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## 目次
+- 開発したもの
+- 開発環境
+- 公開するには
+- 公開後の反響
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## 開発したもの
+
+- hiraku.js
+- a-table.js
+- modal-video
+- react-modal-video
+- 写真閲覧用のJS
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## hiraku.js
+
+[https://appleple.github.io/hiraku/](https://appleple.github.io/hiraku/)
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## a-table.js
+
+[https://appleple.github.io/a-table.js/](https://appleple.github.io/a-table.js/)
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## modal-video
+
+[https://appleple.github.io/modal-video/](https://appleple.github.io/modal-video/)
+</template>
+
+
+<template layout="bullets" type="text/x-markdown">
+## react-modal-video
+
+[https://appleple.github.io/react-modal-video/](https://appleple.github.io/react-modal-video/)
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## 写真閲覧用のJS
+
+[写真閲覧用のJS](http://rawgit.com/appleple/coolPhoto/master/test/jquery.html)
+</template>
+
+
+<template layout="bullets" type="text/x-markdown">
+## 開発環境
+2つのソースコードの吐き出し
+
+- npm module としてbundleして使う用
+- scriptタグとして読み込む用のソースコード
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## npm用のソースコード
+
+[https://github.com/appleple/a-table.js/blob/master/lib/index.js](https://github.com/appleple/a-table.js/blob/master/lib/index.js)
+</template>
+
+
+<template layout="bullets" type="text/x-markdown">
+## スタンドアローンなソースコード
+
+[https://github.com/appleple/a-table.js/blob/master/build/a-table.js](https://github.com/appleple/a-table.js/blob/master/build/a-table.js)
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## 開発環境
+### 使っている技術
+
+- browserify
+- Babel
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## browserify
+JavaScriptのライブラリの依存関係を解決してbundleしてくれるツール
+[http://browserify.org/](http://browserify.org/)
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## Babel
+es6など、未来のJavaScriptを今使うためのツール
+[https://babeljs.io/](https://babeljs.io/)
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## 公開するには
+githubとnpmへの公開
+</template>
+
+<template layout="code" type="text/x-markdown">
+## githubとnpmへの公開
+
+```sh
+npm patch
+npm publish
+git commit -a
+git push
+```
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## githubページの作成
+[https://appleple.github.io/hiraku/](https://appleple.github.io/hiraku/)
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## githubページの作成
+
+gh-pagesでbranchを切ると自動的にページが作成される
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## githubページの作成
+
+ReadmeからJekyllのテーマを選択し<br>ページを作成することも可能
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## Echo JSへの告知
+
+JavaScriptに関するニュースなどを載せることができる掲示板のようなところ
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## applepleのサイトに掲載
+
+[https://www.appleple.com/blog/javascript/](https://www.appleple.com/blog/javascript/)
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## ソーシャルへの告知
+
+TwitterやFacebookなど
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## 公開後の反響
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## 公開後の反響
+Twitterで反響を確認
+
+[https://twitter.com/search?q=hiraku.js&src=typd](https://twitter.com/search?q=hiraku.js&src=typd)
+[https://twitter.com/search?q=a-table.js&src=typd](https://twitter.com/search?q=a-table.js&src=typd)
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## Nagoya.js やってます
+React や Electron などモダンなJavaScript開発のための勉強会です！
+[https://nagoya-js.doorkeeper.jp/](https://nagoya-js.doorkeeper.jp/)
+</template>
+
+<template layout="bullets" type="text/x-markdown">
+## 懇親会などでJavaScript の話をしましょう！
+</template>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+<script src="https://unpkg.com/talkiejs@0.11.2/dist/talkie.min.js"></script>
+<script>
+var talkie = Talkie({wide: false});
+
+talkie.key('s').subscribe(talkie.next$);
+talkie.key('n').subscribe(talkie.next$);
+talkie.key('a').subscribe(talkie.prev$);
+talkie.key('p').subscribe(talkie.prev$);
+
+document.addEventListener('DOMContentLoaded', function() {
+	talkie.changed.subscribe(function(current) {
+		console.clear();
+		// print presenter notes
+		console.info(talkie.notes[current.getAttribute('data-page')]);
+	});
+});
+</script>
+</body>
+</html>
