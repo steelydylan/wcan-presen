@@ -9,29 +9,31 @@
 </head>
 
 <body>
-    <style>
-        html {
-            font-size: 90%;
-        }
+<style>
+	html {
+		font-size: 120%;
+	}
 
-        [layout=cover] h1 {
-            text-transform: none;
-        }
+	[layout=cover] h1 {
+		text-transform: none;
+	}
 
-        [layout=code] .hljs {
-            font-size: 20px;
-        }
-    </style>
+	[layout=code] .hljs {
+		font-size: 20px;
+	}
+</style>
 
     <!-- put your slides -->
 
-    <template layout="cover" invert type="text/x-markdown">
-## JavaScriptライブラリを<br>配布する際に気をつけていること
+<template layout="cover" invert type="text/x-markdown">
+<img src="./images/javascript-logo.png" width="300px">
 
-### 有限会社アップルップル 堀 悟大
+## JSライブラリ公開中
+
+有限会社アップルップル 堀 悟大
 </template>
 
-    <template layout="bullets" type="text/x-markdown">
+    <template layout="bullets" type="text/x-markdown" invert>
 ## 自己紹介
 
 
@@ -39,10 +41,10 @@
 
 <p><img alt="" class="avatar width-full rounded-2" height="230" src="https://avatars2.githubusercontent.com/u/2508691?v=3&amp;s=460" width="230"></p>
 
-### <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> steelydylan
+### steelydylan
 </template>
 
-<template layout="bullets" type="text/x-markdown">
+<template layout="bullets" type="text/x-markdown" invert h-left>
 ## 業務
 
 - JSライブラリの開発
@@ -50,36 +52,41 @@
 - Web制作の受託案件
 </template>
 
-<template layout="bullets" type="text/x-markdown">
-## JavaScriptライブラリを<br>配布する際に気をつけていること
+<template layout="bullets" type="text/x-markdown" invert h-left>
+## 今回お話すること
+
+- JavaScriptライブラリを公開するにあたって心がけていること
+- JavaScriptライブラリの紹介
 </template>
 
-<template layout="bullets" type="text/x-markdown">
-## 気をつけていること
 
-- 事前調査を怠らない
-- カスタマイズしやすい柔軟な設計にすること
+<template layout="bullets" type="text/x-markdown" invert h-left>
+## 心がけていること
+
+- 事前調査
+- カスタマイズしやすい設計にすること
 - 他のJSとの違いを明確にサイトに記載すること
-- ソーシャルでの宣伝を忘れない
+- 自社サイトやソーシャルで情報発信
 </template>
 
 
 
-<template layout="bullets" type="text/x-markdown">
-## 事前調査を怠らない
+<template layout="bullets" type="text/x-markdown" invert h-left>
+## 事前調査
 
 - 類似するようなJSが公開されていないか？
 - 公開されているJSのカスタマイズ製
 </template>
 
 
-<template layout="bullets" type="text/x-markdown">
-## オフキャンバスのライブラリ
+<template layout="bullets" type="text/x-markdown" invert>
+## オフキャンバス
 
-サイド（オフキャンバス）から出現するメニュー
+サイドから出現するメニュー
+<iframe src="./examples/right-side/index.html"></iframe>
 </template>
 
-<template layout="bullets" type="text/x-markdown">
+<template layout="bullets" type="text/x-markdown" invert h-left>
 ## 事前調査
 
 ### オフキャンバスのライブラリ
@@ -89,14 +96,14 @@
 - fundationのoffcanvas
 </template>
 
-<template layout="bullets" type="text/x-markdown">
+<template layout="bullets" type="text/x-markdown" invert h-left>
 - メニューを設置するHTMLの位置の制約
 - アニメーションの美しさの問題
 - アクセシビリティの問題
 - ヘッダーが固定できない問題
 </template>
 
-<template layout="bullets" type="text/x-markdown">
+<template layout="bullets" type="text/x-markdown" invert h-left>
 ## hiraku.js
 
 [https://www.appleple.com/blog/javascript/hiraku-js.html](https://www.appleple.com/blog/javascript/hiraku-js.html)
@@ -104,12 +111,21 @@
 ドローワーメニュー/オフキャンバスメニューを出現させるためのjQueryプラグイン
 </template>
 
-<template layout="bullets" type="text/x-markdown">
+
+<template layout="bullets" type="text/x-markdown" invert>
 ## hiraku.js
+両サイドからの開閉
+<iframe src="./examples/both-sides/index.html"></iframe>
+</template>
+
+<template layout="bullets" type="text/x-markdown" invert>
+## hiraku.js
+メインキャンパスの固定
+<iframe src="./examples/body-fixed/index.html"></iframe>
+</template>
 
 
-[https://www.appleple.com/blog/javascript/hiraku-js.html](https://www.appleple.com/blog/javascript/hiraku-js.html)
-
+<template layout="bullets" type="text/x-markdown" invert h-left>
 他のJSとの違い
 - メニュー部分のHTMLをどこに配置してもいい。
 - ヘッダが固定できる。
@@ -118,59 +134,84 @@
 
 
 
-<template layout="bullets" type="text/x-markdown">
+<template layout="bullets" type="text/x-markdown" invert h-left>
+### ソースコードを2つ用意
+
+- npm用のソースコード
+- scriptタグとして読み込めば使えるソースコード
+</template>
+
+<template layout="bullets" type="text/x-markdown" invert h-left>
+### 情報発信
+他のJSライブラリとの違いをページの先頭の方でいつも明確に記述するように心がけている。
+[https://www.appleple.com/blog/javascript/hiraku-js.html#01](https://www.appleple.com/blog/javascript/hiraku-js.html#01)
+</template>
+
+<template layout="bullets" type="text/x-markdown" invert h-left>
+### カスタマイズ方法の掲載
+[https://www.appleple.com/blog/javascript/hiraku-js.html#03](https://www.appleple.com/blog/javascript/hiraku-js.html#03)
+</template>
+
+<template layout="bullets" type="text/x-markdown" invert h-left>
+### githubページの作成
+
+海外の人にも使ってもらえるように英語版のページも用意
+
+[https://appleple.github.io/hiraku/](https://appleple.github.io/hiraku/)
+</template>
+
+
+<template layout="bullets" type="text/x-markdown" invert h-left>
+### Echo JSへの宣伝
+
+JavaScriptに関するニュースなどを載せることができる掲示板のようなところ
+[http://www.echojs.com/](http://www.echojs.com/)
+</template>
+
+<template layout="bullets" type="text/x-markdown" invert h-left>
+### applepleのサイトに掲載
+
+[https://www.appleple.com/blog/javascript/](https://www.appleple.com/blog/javascript/)
+</template>
+
+<template layout="bullets" type="text/x-markdown" invert h-left>
+### ソーシャルでの宣伝
+
+TwitterやFacebookなど
+</template>
+
+<template layout="bullets" type="text/x-markdown" invert h-left>
+## 公開後の反響
+</template>
+
+<template layout="bullets" type="text/x-markdown" invert h-left>
+## 公開後の反響
+Twitterで反響を確認
+
+[https://twitter.com/search?q=hiraku.js&src=typd](https://twitter.com/search?q=hiraku.js&src=typd)
+</template>
+
+<template layout="bullets" type="text/x-markdown" invert h-left>
 ## 他のライブラリの紹介
 
 - a-table.js
-- modal-video
-- react-modal-video
-- 写真閲覧用のJS
+- smart-photo.js
 </template>
 
-
-
-<template layout="bullets" type="text/x-markdown">
+<template layout="bullets" type="text/x-markdown" invert h-left>
 ## a-table.js
 
-[https://appleple.github.io/a-table.js/](https://appleple.github.io/a-table.js/)
+[https://www.appleple.com/blog/javascript/a-table.html](https://www.appleple.com/blog/javascript/a-table.html)
 </template>
 
-<template layout="bullets" type="text/x-markdown">
+<template layout="bullets" type="text/x-markdown" invert>
 ## a-table.js
 
-[https://appleple.github.io/a-table.js/](https://appleple.github.io/a-table.js/)
-
-
-他のJSとの違い
-- ソースの吐き出しが可能
-- セル一つ一つにクラスの適応が可能
-</template>
-
-<template layout="bullets" type="text/x-markdown">
-## modal-video
-
-[https://appleple.github.io/modal-video/](https://appleple.github.io/modal-video/)
-</template>
-
-<template layout="bullets" type="text/x-markdown">
-## modal-video
-
-[https://appleple.github.io/modal-video/](https://appleple.github.io/modal-video/)
-
-
-他のJSとの違い
-- モーダル + Video
- - VimeoとYoutubeのオプションを網羅
+<iframe src="./examples/table.html" style="margin:0;width:600px;height:200px;"></iframe>
 </template>
 
 
-<template layout="bullets" type="text/x-markdown">
-## react-modal-video
-
-[https://appleple.github.io/react-modal-video/](https://appleple.github.io/react-modal-video/)
-</template>
-
-<template layout="bullets" type="text/x-markdown">
+<template layout="bullets" type="text/x-markdown" invert h-left>
 ## smart-photo.js
 
 [http://rawgit.com/appleple/smartPhoto/master/test/vanilla.html](http://rawgit.com/appleple/smartPhoto/master/test/vanilla.html)
@@ -179,165 +220,66 @@
 - ジャイロセンサー使用
 </template>
 
-<template layout="bullets" type="text/x-markdown">
-## カスタマイズ製を考えた実装
+<template layout="bullets" type="text/x-markdown" invert h-left>
 
-豊富にオプションを用意。
-カスタマイズ方法もサイトに記載しています。
-[https://www.appleple.com/blog/javascript/hiraku-js.html#03](https://www.appleple.com/blog/javascript/hiraku-js.html#03)
+<iframe src="./examples/vanilla.html" style="width:100%;height:100%;margin:0;padding:0;"></iframe>
 </template>
 
 
-<template layout="bullets" type="text/x-markdown">
-## カスタマイズ製を考えた実装
-
-カスタマイズ製を考えて2つのソースコードの吐き出し。
-
-- npm用のソースコード
-- scriptタグとして読み込めば使えるソースコード
-</template>
-
-<template layout="bullets" type="text/x-markdown">
-## npm用のソースコード
-
-[https://github.com/appleple/a-table.js/blob/master/lib/index.js](https://github.com/appleple/a-table.js/blob/master/lib/index.js)
-</template>
-
-
-<template layout="bullets" type="text/x-markdown">
-## スタンドアローンなソースコード
-
-[https://github.com/appleple/a-table.js/blob/master/build/a-table.js](https://github.com/appleple/a-table.js/blob/master/build/a-table.js)
-</template>
-
-
-<template layout="bullets" type="text/x-markdown">
-## 開発環境
-### 使っている技術
-
-- browserify
-- Babel
-</template>
-
-<template layout="bullets" type="text/x-markdown">
-## browserify
-JavaScriptのライブラリの依存関係を解決してbundleしてくれるツール
-[http://browserify.org/](http://browserify.org/)
-</template>
-
-<template layout="bullets" type="text/x-markdown">
-## Babel
-es6など、未来のJavaScriptを今使うためのツール
-[https://babeljs.io/](https://babeljs.io/)
-</template>
-
-<template layout="bullets" type="text/x-markdown">
-## 他のJSとの違いを明確に記載
-
-他のJSライブラリとの違いをページの先頭の方でいつも明確に記述するように心がけている。
-</template>
-
-<template layout="bullets" type="text/x-markdown">
-## 他のJSとの違いを明確に記載
-
-<img src="./images/features.png"/>
-</template>
-
-<template layout="bullets" type="text/x-markdown">
-## githubページの作成
-
-海外の人にも使ってもらえるように英語版のページも用意
-[https://appleple.github.io/hiraku/](https://appleple.github.io/hiraku/)
-</template>
-
-<template layout="bullets" type="text/x-markdown">
-## githubページの作成
-
-githubではgh-pagesでbranchを切ると自動的にページが作成される
-[https://appleple.github.io/hiraku/](https://appleple.github.io/hiraku/)
-</template>
-
-
-<template layout="bullets" type="text/x-markdown">
-## 徹底したソーシャルへの宣伝
-</template>
-
-<template layout="bullets" type="text/x-markdown">
-## Echo JSへの宣伝
-
-JavaScriptに関するニュースなどを載せることができる掲示板のようなところ
-[http://www.echojs.com/](http://www.echojs.com/)
-</template>
-
-<template layout="bullets" type="text/x-markdown">
-## applepleのサイトに掲載
-
-[https://www.appleple.com/blog/javascript/](https://www.appleple.com/blog/javascript/)
-</template>
-
-<template layout="bullets" type="text/x-markdown">
-## ソーシャルでの宣伝
-
-TwitterやFacebookなど
-</template>
-
-<template layout="bullets" type="text/x-markdown">
-## 公開後の反響
-</template>
-
-<template layout="bullets" type="text/x-markdown">
-## 公開後の反響
-Twitterで反響を確認
-
-[https://twitter.com/search?q=hiraku.js&src=typd](https://twitter.com/search?q=hiraku.js&src=typd)
-[https://twitter.com/search?q=a-table.js&src=typd](https://twitter.com/search?q=a-table.js&src=typd)
-</template>
-
-
-<template layout="bullets" type="text/x-markdown">
+<template layout="bullets" type="text/x-markdown" invert h-left>
 ## まとめ
 
-- 事前調査を怠らない
-- カスタマイズしやすい柔軟な設計にすること
-- 他のJSとの違いを明確にサイトに記載すること
-- ソーシャルでの宣伝を忘れない
+- JavaScriptライブラリを開発しています
+- サイトに組み込みやすい柔軟な設計にしています
+- 事前調査をしっかりしています
+- 他のJSとの違いを明確にサイトに記載しています
 </template>
 
-    <template layout="bullets" type="text/x-markdown">
-## Nagoya.js やってます
-React や Electron などモダンなJavaScript開発のための勉強会です！
-[https://nagoya-js.doorkeeper.jp/](https://nagoya-js.doorkeeper.jp/)
+<template layout="bullets" type="text/x-markdown" invert h-left>
+## よければ使ってみてください！
 </template>
 
-    <template layout="bullets" type="text/x-markdown">
-## 懇親会などでJavaScript の話をしましょう！
+<template layout="bullets" type="text/x-markdown" invert h-left>
+## デザイナー募集中
+
+詳しくは配布チラシより！
 </template>
 
-<template layout="bullets" type="text/x-markdown">
-# Thanks!
-</template>
+<script layout="cover" invert h-left type="text/x-markdown" invert
+        backface="./images/thankyou.jpg"
+        backface-filter="brightness(.5)">
+
+# Thank You!
+
+Twitter: @steelydylan<br>
+GitHub: steelydylan<br>
+
+</script>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
-    <script src="https://unpkg.com/talkiejs@0.11.2/dist/talkie.min.js"></script>
-    <script>
-        var talkie = Talkie({
-            wide: false
-        });
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+<script src="https://unpkg.com/talkiejs@0.11.2/dist/talkie.min.js"></script>
+<script>
+	var talkie = Talkie({
+		wide: false
+	});
 
-        talkie.key('s').subscribe(talkie.next$);
-        talkie.key('n').subscribe(talkie.next$);
-        talkie.key('a').subscribe(talkie.prev$);
-        talkie.key('p').subscribe(talkie.prev$);
+	talkie.key('s').subscribe(talkie.next$);
+	talkie.key('n').subscribe(talkie.next$);
+	talkie.key('a').subscribe(talkie.prev$);
+	talkie.key('p').subscribe(talkie.prev$);
 
-        document.addEventListener('DOMContentLoaded', function() {
-            talkie.changed.subscribe(function(current) {
-                console.clear();
-                // print presenter notes
-                console.info(talkie.notes[current.getAttribute('data-page')]);
-            });
-        });
-    </script>
+	document.addEventListener('DOMContentLoaded', function() {
+		talkie.changed.subscribe(function(current) {
+			console.clear();
+			// print presenter notes
+			console.info(talkie.notes[current.getAttribute('data-page')]);
+		});
+	});
+</script>
+<script>
+	new smartPhoto(".js-img-viwer");
+</script>
 </body>
 
 </html>
