@@ -84,10 +84,10 @@
 
 
 <template layout="bullets" type="text/x-markdown">
-## オフキャンバス
-
 サイドから出現するメニュー
+<div style="background-image:url(./images/iphone-frame.png);background-size:cover;padding:145px 35px 0 35px;">
 <iframe src="./examples/right-side/index.html" style="width:400px;height:500px;margin-top:0;margin-bottom:0;"></iframe>
+</div>
 </template>
 
 <template layout="bullets" type="text/x-markdown" invert h-left>
@@ -130,18 +130,29 @@
 
 
 <template layout="bullets" type="text/x-markdown">
-## hiraku.js
 両サイドからの開閉
+<div style="background-image:url(./images/iphone-frame.png);background-size:cover;padding:145px 35px 0 35px;">
 <iframe src="./examples/both-sides/index.html" style="width:400px;height:500px;margin-top:0;margin-bottom:0;"></iframe>
 </template>
 
 <template layout="bullets" type="text/x-markdown">
-## hiraku.js
 メインキャンパスの固定
+<div style="background-image:url(./images/iphone-frame.png);background-size:cover;padding:145px 35px 0 35px;">
 <iframe src="./examples/body-fixed/index.html" style="width:400px;height:500px;margin-top:0;margin-bottom:0;"></iframe>
+</div>
+</div>
 </template>
 
+<template layout="bullets" type="text/x-markdown" invert h-left>
+## 情報発信
+</template>
 
+<template layout="bullets" type="text/x-markdown">
+### 自社サイトに掲載
+<img src="./images/appleple.png" width="500" />
+
+[https://www.appleple.com/blog/javascript/](https://www.appleple.com/blog/javascript/)
+</template>
 
 <template layout="bullets" type="text/x-markdown" invert h-left>
 ### 情報発信
@@ -149,15 +160,18 @@
 [https://www.appleple.com/blog/javascript/hiraku-js.html#01](https://www.appleple.com/blog/javascript/hiraku-js.html#01)
 </template>
 
+
 <template layout="bullets" type="text/x-markdown" invert h-left>
-### カスタマイズ方法の掲載
+### 情報発信
+カスタマイズ方法の掲載
 [https://www.appleple.com/blog/javascript/hiraku-js.html#03](https://www.appleple.com/blog/javascript/hiraku-js.html#03)
 </template>
 
-<template layout="bullets" type="text/x-markdown" invert h-left>
+<template layout="bullets" type="text/x-markdown">
 ### githubページの作成
 
-海外の人にも使ってもらえるように英語版のページも用意
+<img src="./images/gh-page.png" width="500">
+<!--<div style="background-color:rgba(0,0,0,.2);position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1"></div>-->
 
 [https://appleple.github.io/hiraku/](https://appleple.github.io/hiraku/)
 </template>
@@ -170,16 +184,11 @@ JavaScriptに関するニュースなどを載せることができる掲示板�
 [http://www.echojs.com/](http://www.echojs.com/)
 </template>
 
-<template layout="bullets" type="text/x-markdown" invert h-left>
-### 自社サイトに掲載
-
-[https://www.appleple.com/blog/javascript/](https://www.appleple.com/blog/javascript/)
-</template>
 
 <template layout="bullets" type="text/x-markdown" invert h-left>
 ### ソーシャルでの宣伝
 
-TwitterやFacebookなど
+Twitter や Facebook など
 </template>
 
 <template layout="bullets" type="text/x-markdown" invert h-left>
@@ -200,19 +209,21 @@ Git Awards
 
 
 <template layout="bullets" type="text/x-markdown" invert h-left>
-## smart-photo.js
+## SmartPhoto
 
 現在開発中
 
 [http://rawgit.com/appleple/smartPhoto/master/test/vanilla.html](http://rawgit.com/appleple/smartPhoto/master/test/vanilla.html)
 
-- デバイスに応じて最適な画像サイズで表示
+- 画面幅いっぱいに画像を表示
 - ジャイロセンサー使用
 </template>
 
-<template layout="bullets" type="text/x-markdown" invert h-left>
+<template layout="bullets" type="text/x-markdown">
 
-<iframe src="./examples/vanilla.html" style="width:100%;height:100%;margin:0;padding:0;"></iframe>
+<div style="background-image:url(./images/iphone-frame.png);background-size:cover;padding:145px 35px 0 35px;">
+<iframe src="./examples/vanilla.html" style="width:400px;height:500px;margin-top:0;margin-bottom:0;"></iframe>
+</div>
 </template>
 
 <template layout="bullets" type="text/x-markdown" invert h-left>
@@ -245,8 +256,11 @@ Git Awards
 ## よければ使ってみてください！
 </template>
 
-<template layout="bullets" type="text/x-markdown" invert h-left>
+<template layout="bullets" type="text/x-markdown">
 ## Nagoya.jsやってます！
+
+<img src="./images/nagoya-js.png" width="300" />
+
 [https://nagoya-js.github.io/](https://nagoya-js.github.io/)
 </template>
 
@@ -269,7 +283,7 @@ GitHub: steelydylan<br>
 </script>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+<script src="./js/highlight.min.js"></script>
 <script src="https://unpkg.com/talkiejs@0.11.2/dist/talkie.min.js"></script>
 <script>
 	var talkie = Talkie({
